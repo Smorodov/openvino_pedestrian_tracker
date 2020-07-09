@@ -1,0 +1,18 @@
+INTEL_OPENVINO_DIR		C:\Program Files (x86)\IntelSWTools\openvino
+INTEL_CVSDK_DIR			%INTEL_OPENVINO_DIR%	 
+OpenCV_DIR				%INTEL_OPENVINO_DIR%\opencv\cmake	 
+OPENVX_FOLDER			%INTEL_OPENVINO_DIR%\openvx	 
+InferenceEngine_DIR		%INTEL_OPENVINO_DIR%\deployment_tools\inference_engine\share	 
+HDDL_INSTALL_DIR		%INTEL_OPENVINO_DIR%\deployment_tools\inference_engine\external\hddl	 
+PYTHONPATH				%INTEL_OPENVINO_DIR%\python\python3.6	Check your Python* version and adjust
+
+You will also need to edit the Path variable under System Variables and Add the following entries:
+
+%INTEL_OPENVINO_DIR%\deployment_tools\ngraph\lib
+%INTEL_OPENVINO_DIR%\deployment_tools\inference_engine\external\tbb\bin
+%INTEL_OPENVINO_DIR%\deployment_tools\inference_engine\bin\intel64\Release
+%INTEL_OPENVINO_DIR%\deployment_tools\inference_engine\bin\intel64\Debug
+%HDDL_INSTALL_DIR%\bin
+%INTEL_OPENVINO_DIR%\opencv\bin
+%INTEL_OPENVINO_DIR%\openvx\bin
+ 
